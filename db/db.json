@@ -1,24 +1,24 @@
 {
     "ingredientes": {
-      "paes": [
+      "pizzas": [
         {
           "id": 1,
-          "tipo": "Italiano Branco"
+          "tipo": "Tradicional"
         },
         {
           "id": 2,
-          "tipo": "3 Queijos"
+          "tipo": "Siciliana"
         },
         {
           "id": 3,
-          "tipo": "Parmesão e Orégano"
+          "tipo": "Napolitano"
         },
         {
           "id": 4,
           "tipo": "Integral"
         }
       ],
-      "carnes": [
+      "recheios": [
         {
           "id": 1,
           "tipo": "Maminha"
