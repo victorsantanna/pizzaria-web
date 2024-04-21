@@ -2,17 +2,19 @@
   <Banner />
   <div class="main-container">
     <h1>Monte o seu Pizza:</h1>
-    <p>Formulário</p>
+    <PizzaForm />
   </div>
 </template>
 
 <script>
 import Banner from "../components/Banner.vue"
+import PizzaForm from "../components/PizzaForm.vue"
 
 export default{
   name:"Home",
   components:{
     Banner,
+    PizzaForm,
   }
 }
 
