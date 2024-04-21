@@ -1,81 +1,81 @@
 {
-    "ingredientes": {
-      "pizzas": [
-        {
-          "id": 1,
-          "tipo": "Tradicional"
-        },
-        {
-          "id": 2,
-          "tipo": "Siciliana"
-        },
-        {
-          "id": 3,
-          "tipo": "Napolitano"
-        },
-        {
-          "id": 4,
-          "tipo": "Integral"
-        }
-      ],
-      "recheios": [
-        {
-          "id": 1,
-          "tipo": "Maminha"
-        },
-        {
-          "id": 2,
-          "tipo": "Alcatra"
-        },
-        {
-          "id": 3,
-          "tipo": "Picanha"
-        },
-        {
-          "id": 4,
-          "tipo": "Veggie burger"
-        }
-      ],
-      "opcionais": [
-        {
-          "id": 1,
-          "tipo": "Bacon"
-        },
-        {
-          "id": 2,
-          "tipo": "Cheddar"
-        },
-        {
-          "id": 3,
-          "tipo": "Salame"
-        },
-        {
-          "id": 4,
-          "tipo": "Tomate"
-        },
-        {
-          "id": 4,
-          "tipo": "Cebola roxa"
-        },
-        {
-          "id": 4,
-          "tipo": "Pepino"
-        }
-      ]
-    },
-    "status": [
+  "ingredientes": {
+    "pizzas": [
       {
         "id": 1,
-        "tipo": "Solicitado"
+        "tipo": "Tradicional"
       },
       {
         "id": 2,
-        "tipo": "Em produção"
+        "tipo": "Siciliana"
       },
       {
         "id": 3,
-        "tipo": "Finalizado"
+        "tipo": "Napolitano"
+      },
+      {
+        "id": 4,
+        "tipo": "Integral"
       }
     ],
-    "pizzas": []
-  }
+    "recheios": [
+      {
+        "id": 1,
+        "tipo": "Maminha"
+      },
+      {
+        "id": 2,
+        "tipo": "Alcatra"
+      },
+      {
+        "id": 3,
+        "tipo": "Picanha"
+      },
+      {
+        "id": 4,
+        "tipo": "Veggie burger"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Bacon"
+      },
+      {
+        "id": 2,
+        "tipo": "Cheddar"
+      },
+      {
+        "id": 3,
+        "tipo": "Salame"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomate"
+      },
+      {
+        "id": 4,
+        "tipo": "Cebola roxa"
+      },
+      {
+        "id": 4,
+        "tipo": "Pepino"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": "1",
+      "tipo": "Em produção"
+    },
+    {
+      "id": "2",
+      "tipo": "finalizado"
+    },
+    {
+      "id": "3",
+      "tipo": " Saiu Entrega"
+    }
+  ],
+  "pizzas": [ ]
+}
