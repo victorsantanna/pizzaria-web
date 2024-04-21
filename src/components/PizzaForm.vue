@@ -12,21 +12,21 @@
                 <label for="Pizza">Escolha a Massa:</label>
                 <select name="pizza" id="pizza" v-model="pizza">
                 <option value="">Selecione o tipo da massa</option>
-                <option value="integral">Integral</option>
+                <option v-for="pizza in pizzas" :key="pizza.id" :value="pizza.tipo">{{ pizza.tipo }}</option>
                 </select>
             </div>
             <div class="input-container">
                 <label for="recheio">Escolha o recheio:</label>
                 <select name="recheio" id="recheio" v-model="recheio">
                 <option value="">Selecione o tipo do recheio</option>
-                <option value="integral">4 Queijos</option>
+                <option v-for="recheio in recheios" :key="recheio.id" :value="recheio.tipo">{{ recheio.tipo }}</option>
                 </select>
             </div>
             <div id="opcionais-container" class="input-container">
                 <label for="opcionais" id="opcionais-title">Escolha os opcionais:</label>
-                <div class="checkbox-container">
-                    <input type="checkbox" name="opcionais" v-model="opcionais" value="salame">
-                    <span>Salame</span>
+                <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id">
+                    <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
+                    <span>{{ opcional.tipo }}</span>
                 </div>
             </div>
             <div class="input-container">
@@ -38,7 +38,36 @@
 
 <script>
 export default {
-    name:"PizzaForm"
+    name:"PizzaForm",
+    data(){
+        return{
+            pizzas:null,
+            recheios: null,
+            opcionaisdata: null,
+            nome: null,
+            pizza:null,
+            recheios: null,
+            opcionais: [],
+            status:"Solicitado",
+            msg: null, 
+        }
+
+    },
+    methods:{
+        async getIngredientes(){
+            
+            const req = await fetch("http://localhost:3000/ingredientes");
+            const data = await req.json();
+
+            this.pizzas = data.pizzas;
+            this.recheios = data.recheios;
+            this.opcionaisdata = data.opcionais;
+
+        }
+    },
+    mounted(){
+        this.getIngredientes()
+    }
     
 }
 </script>
