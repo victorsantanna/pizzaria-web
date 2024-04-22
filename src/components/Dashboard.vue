@@ -138,8 +138,8 @@ export default {
   }
 
   select {
-    padding: 12px 6px;
-    margin-right: 12px;
+    padding: 10px 6px;
+    margin-right: 10px;
   }
 
   .delete-btn {
