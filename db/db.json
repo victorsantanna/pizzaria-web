@@ -21,19 +21,19 @@
     "recheios": [
       {
         "id": 1,
-        "tipo": "Maminha"
+        "tipo": "4 queijos"
       },
       {
         "id": 2,
-        "tipo": "Alcatra"
+        "tipo": "calabresa"
       },
       {
         "id": 3,
-        "tipo": "Picanha"
+        "tipo": "frango"
       },
       {
         "id": 4,
-        "tipo": "Veggie burger"
+        "tipo": "nordestina"
       }
     ],
     "opcionais": [
@@ -59,14 +59,14 @@
       },
       {
         "id": 4,
-        "tipo": "Pepino"
+        "tipo": "Catupiry"
       }
     ]
   },
   "status": [
     {
       "id": "1",
-      "tipo": "Em produção"
+      "tipo": "Produção"
     },
     {
       "id": "2",
@@ -77,5 +77,16 @@
       "tipo": " Saiu Entrega"
     }
   ],
-  "pizzas": [ ]
+  "pizzas": [
+    {
+      "id": "e5bd",
+      "nome": "rafa",
+      "recheio": "calabresa",
+      "pizza": "Siciliana",
+      "opcionais": [
+        "Salame"
+      ],
+      "status": "Produção"
+    }
+  ]
 }
