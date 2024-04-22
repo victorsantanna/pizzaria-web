@@ -1,7 +1,7 @@
 <template>
   <Banner />
   <div class="main-container">
-    <h1>Monte o seu Pizza:</h1>
+    <h1>Monte a sua Pizza:</h1>
     <PizzaForm />
   </div>
 </template>
